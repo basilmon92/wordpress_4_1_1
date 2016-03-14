@@ -1,10 +1,10 @@
-=== Team - Meet The Team Grid ===
+=== Team ===
 	Contributors: paratheme
 	Donate link: http://paratheme.com
 	Tags: team, members profiles, our teams, team members, team plugin wordpress, meet the team
 	Requires at least: 3.8
-	Tested up to: 4.1
-	Stable tag: 1.4
+	Tested up to: 4.4.2
+	Stable tag: 1.13
 	License: GPLv2 or later
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,16 +18,17 @@ Display team member profiles with descriptions and links to social media using o
 
 ### Team by http://paratheme.com
 
-* [Upgrade to Premium! &raquo;](http://paratheme.com/items/team-responsive-meet-the-team-grid-for-wordpress/)
-* [Watch Video Tutorial! &raquo;](https://www.youtube.com/watch?v=8OiNCDavSQg)
-* [Live Demo! &raquo;](http://paratheme.com/demo/team/)
+* [Live Demo!&raquo;](http://paratheme.com/demo/team/)
+* [Upgrade to Premium!&raquo;](http://paratheme.com/items/team-responsive-meet-the-team-grid-for-wordpress/)
+* [Watch Video Tutorial!&raquo;](https://www.youtube.com/watch?v=8OiNCDavSQg)
+
 
 <strong>Plugin Features</strong><br />
 
 * Fully responsive and mobile ready.
-* Query Team meamber from latest, Older Published, by Only Year, by Month of a year
+* Query Team meamber from latest, Older Published, by Only Year, by Month of a year, Categories, post id.
 * Unlimited team's anywhere.
-* Three Different themes.
+* Two Different themes.
 * Custom number of member query.
 * Team member thumbnail images size selection.
 * Team grid thumbnail custom width.
@@ -36,24 +37,13 @@ Display team member profiles with descriptions and links to social media using o
 * Background image for team area.
 * Team member name font color.
 * Team member name font size.
+* Team member position font color.
+* Team member position font size.
+* Team member bio font color.
+* Team member bio font size.
 
-<strong>Premium Features</strong><br />
-
-* Total four themes.
-* Query Team meamber from team group(categories), team member id's.
-* Grid thumbnail custom width.
-* Grid items text align.
-* Member bio font size.
-* Member position font color.
-* Member position font size.
-* Custom icons for custom profile field.
-* Click-able link to custom post team members.
-* Click-able link to custom link to team members.
-* Popup profile box on click member thumbnail.
-* and more on updating.
-
-<strong>Video Tutorial Here.</strong>
-https://www.youtube.com/watch?v=8OiNCDavSQg
+<strong>Video Tutorial Here.(with premium features)</strong>
+https://www.youtube.com/watch?v=LI9yZmOGXDM
 
 
 
@@ -94,13 +84,61 @@ then paste this shortcode anywhere in your page to display Team gird.<br />
 
 == Changelog ==
 
-
-	= 1.4=
+	= 1.13 =
 	
-    * 110/02/2015 add display team under text widget.
+    * 04/02/2016 fix - team member slug issue fixed.
 
+	= 1.12 =
+	
+    * 25/01/2016 add - background color for container area.
+    * 25/01/2016 update - Settings UI update.	
 
-	= 1.3=
+	= 1.11 =
+	
+    * 04/01/2016 update - settings page update.
+
+	= 1.10 =
+	
+    * 11/12/2015 fix - Shortcode issue fixed.
+	
+	= 1.9 =
+	
+    * 19/11/2015 fix - Fixed file missing issue for single team members.
+	
+
+	= 1.8 =
+	
+    * 10/11/2015 add - Custom Team member post type slug.
+    * 10/11/2015 add - Custom Custom meta fields for team member via setting spage.		
+    * 10/11/2015 add - advance social field on team member setting page.	
+    * 10/11/2015 add - Grid item max Width for mobile, tabs.				
+    * 10/11/2015 add - added new theme Zoom Out.
+    * 10/11/2015 add - added new theme Zoom Out.		
+    * 10/11/2015 add - update setting page.
+    * 10/11/2015 add - Themes for single team member page.
+	
+	= 1.7 =
+	
+    * 19/09/2015 add - lot more premium feature added.
+
+	= 1.6 =
+	
+    * 25/02/2015 add - add thumbnail alt tag.
+
+	= 1.5 =
+	
+    * 25/02/2015 add Improve social icons.
+    * 25/02/2015 add new social fields added.
+    * 25/02/2015 add remove button added on setting page for social profile fields.
+    * 25/02/2015 add Custom CSS box.
+    * 25/02/2015 add member bio content selection "full" or "excerpt".
+    * 25/02/2015 add member excerpt custom Length & Read More Text.
+	
+	= 1.4 =
+	
+    * 10/02/2015 add display team under text widget.
+
+	= 1.3 =
 	
     * 15/11/2014 php error fixed.
     * 15/11/2014 js error fixed.
@@ -113,8 +151,7 @@ then paste this shortcode anywhere in your page to display Team gird.<br />
     * 28/10/2014 added input field for member bio height.
     * 30/10/2014 Responsive admin settings.
     * 25/10/2014 added input field for margin to grid items.
-	
-		
+
 	= 1.1 =
 	
     * 01/10/2014 added email link to profile.

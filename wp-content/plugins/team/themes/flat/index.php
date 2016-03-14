@@ -1,295 +1,137 @@
 <?php
 
-if ( ! defined('ABSPATH')) exit; // if direct access 
+/*
+* @Author 		ParaTheme
+* @Folder	 	Team/Themes
+* @version     3.0.5
 
-function team_body_flat($post_id)
-	{
+* Copyright: 	2015 ParaTheme
+*/
 
-		$team_bg_img = get_post_meta( $post_id, 'team_bg_img', true );
-		$team_themes = get_post_meta( $post_id, 'team_themes', true );
-		$team_grid_item_align = get_post_meta( $post_id, 'team_grid_item_align', true );		
-		$team_item_text_align = get_post_meta( $post_id, 'team_item_text_align', true );
-				
-		$team_total_items = get_post_meta( $post_id, 'team_total_items', true );		
-		$team_column_number = get_post_meta( $post_id, 'team_column_number', true );
+if ( ! defined('ABSPATH')) exit; // if direct access  
 
-		$team_content_source = get_post_meta( $post_id, 'team_content_source', true );
-		$team_content_year = get_post_meta( $post_id, 'team_content_year', true );
-		$team_content_month = get_post_meta( $post_id, 'team_content_month', true );
-		$team_content_month_year = get_post_meta( $post_id, 'team_content_month_year', true );
+
+		include team_plugin_dir.'/templates/team-grid-variables.php';
+
+
+		$html = '';
+
+		$html .= '<div  class="team-container team-container-'.$post_id.'" >
+		<div  id="team-'.$post_id.'" class="team-items team-'.$team_themes.'">';
 		
-		$team_posttype = 'team_member';
-		$team_taxonomy = 'team_group';
-		$team_taxonomy_category = get_post_meta( $post_id, 'team_taxonomy_category', true );	
+			
+		include team_plugin_dir.'/templates/team-grid-query.php';
 
-
-		$team_post_ids = get_post_meta( $post_id, 'team_post_ids', true );
-
-		$team_items_title_color = get_post_meta( $post_id, 'team_items_title_color', true );			
-		$team_items_title_font_size = get_post_meta( $post_id, 'team_items_title_font_size', true );		
-
-		$team_items_position_font_size = get_post_meta( $post_id, 'team_items_position_font_size', true );
-		$team_items_position_color = get_post_meta( $post_id, 'team_items_position_color', true );
-
-		$team_items_content_color = get_post_meta( $post_id, 'team_items_content_color', true );
-		$team_items_content_font_size = get_post_meta( $post_id, 'team_items_content_font_size', true );
-		$team_items_content_height = get_post_meta( $post_id, 'team_items_content_height', true );
-		
-		$team_items_thumb_size = get_post_meta( $post_id, 'team_items_thumb_size', true );
-		$team_items_max_width = get_post_meta( $post_id, 'team_items_max_width', true );		
-		$team_items_thumb_max_hieght = get_post_meta( $post_id, 'team_items_thumb_max_hieght', true );
-		
-		$team_items_margin = get_post_meta( $post_id, 'team_items_margin', true );
-				
-		$team_body = '';
-		$team_body = '<style type="text/css"></style>';
+		// use to detect mobile and tablet device Mobile_Detect class 
+		$Mobile_Detect = new Mobile_Detect();
+		$is_mobile = $Mobile_Detect->isMobile();
+		$is_tablet = $Mobile_Detect->isTablet();
+		$is_ipad = $Mobile_Detect->is_ipad();		
 		
 		
-		
-		$team_body .= '
-		<div  class="team-container" style="background-image:url('.$team_bg_img.');text-align:'.$team_grid_item_align.';">
 
-		<ul  id="team-'.$post_id.'" class="team-items team-flat">';
-		
-		global $wp_query;
-		
-
-
-		
-		if(($team_content_source=="latest"))
+		if($is_mobile)
 			{
-			
-				$wp_query = new WP_Query(
-					array (
-						'post_type' => $team_posttype,
-						'orderby' => 'date',
-						'order' => 'DESC',
-						'posts_per_page' => $team_total_items,
-						
-						) );
-			
-			
-			}		
-		
-		elseif(($team_content_source=="older"))
-			{
-			
-				$wp_query = new WP_Query(
-					array (
-						'post_type' => $team_posttype,
-						'orderby' => 'date',
-						'order' => 'ASC',
-						'posts_per_page' => $team_total_items,
-						
-						) );
-
-			}		
-
-		elseif(($team_content_source=="year"))
-			{
-			
-				$wp_query = new WP_Query(
-					array (
-						'post_type' => $team_posttype,
-						'year' => $team_content_year,
-						'posts_per_page' => $team_total_items,
-						) );
-
+				$team_items_max_width = $team_items_width_mobile;
 			}
-
-		elseif(($team_content_source=="month"))
-			{
-			
-				$wp_query = new WP_Query(
-					array (
-						'post_type' => $team_posttype,
-						'year' => $team_content_month_year,
-						'monthnum' => $team_content_month,
-						'posts_per_page' => $team_total_items,
-						
-						) );
-
+		elseif($is_tablet){
+			$team_items_max_width = $team_items_width_tablet;
 			}
-
-		elseif($team_content_source=="taxonomy")
-			{
-				$wp_query = new WP_Query(
-					array (
-						'post_type' => $team_posttype,							
-						'posts_per_page' => $team_total_items,
-						
-						'tax_query' => array(
-							array(
-								   'taxonomy' => $team_taxonomy,
-								   'field' => 'id',
-								   'terms' => $team_taxonomy_category,
-							)
-						)
-						
-						) );
-			}
-
-
-		
-		elseif(($team_content_source=="post_id"))
-			{
-			
-				$wp_query = new WP_Query(
-					array (
-						'post__in' => $team_post_ids,
-						'post_type' => $team_posttype,
-						
-						
-						) );
-			
-			
+		elseif($is_ipad){
+			$team_items_max_width = $team_items_width_tablet;
+			}			
+		else{
+			$team_items_max_width = $team_items_max_width;
 			}
 
 			
-
-								
 		
 		if ( $wp_query->have_posts() ) :
-		
 
+		$i=0;
 		
 		while ( $wp_query->have_posts() ) : $wp_query->the_post();
-		
 
+
+		$team_member_position = get_post_meta(get_the_ID(), 'team_member_position', true );
+		$team_member_social_links = get_post_meta( get_the_ID(), 'team_member_social_links', true );	
+		
+		$team_member_link_to_post = get_post_meta( get_the_ID(), 'team_member_link_to_post', true );
+		
 		$team_thumb = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), $team_items_thumb_size );
 		$team_thumb_url = $team_thumb['0'];
-		
+
+
+		$html.= '<div style="width:'.$team_items_max_width.';text-align:'.$team_item_text_align.';margin:'.$team_items_margin.'" class="team-item" >';
 		
 
-			
-			
-		
-		$team_body.= '<li style="width:'.$team_items_max_width.';text-align:'.$team_item_text_align.';margin:20px '.$team_items_margin.'" class="team-item" >';
-		$team_body.= '<div class="team-post">';		
-
-		if(!empty($team_thumb_url))
+		$class_team_functions = new class_team_functions();
+		if(empty($team_grid_items))
 			{
-					$team_body.= '
-		<div style="height:'.$team_items_thumb_max_hieght.';" class="team-thumb">
-			<img src="'.$team_thumb_url.'" />
+				$team_grid_items = $class_team_functions->team_grid_items();
+				
+			}
 
-		</div>';
+		foreach($team_grid_items as $key=>$name)
+			{
+				
+				if(empty($team_grid_items_hide[$key]))
+					{
+					include team_plugin_dir.'templates/team-grid-'.$key.'.php';
+					}
+				
 			}
 
 
-	$team_member_position = get_post_meta(get_the_ID(), 'team_member_position', true );
-	$team_member_website = get_post_meta( get_the_ID(), 'team_member_website', true );	
-	$team_member_email = get_post_meta( get_the_ID(), 'team_member_email', true );
-	$team_member_skype = get_post_meta( get_the_ID(), 'team_member_skype', true );	
-	$team_member_social_links = get_post_meta( get_the_ID(), 'team_member_social_links', true );	
-	
-
-
-
-	
-		$team_body.= '
-			<div class="team-title" style="color:'.$team_items_title_color.';font-size:'.$team_items_title_font_size.'">'.get_the_title().'
-			</div>';
-			if(!empty($team_member_position))
-				{
-					$team_body.= '<div class="team-position" style="color:'.$team_items_position_color.';font-size:'.$team_items_position_font_size.'">'.$team_member_position.'
-					</div>';
-				}
-
-			
-			$team_body.= '<div class="team-social" >';
-			
-			
-			$team_member_social_field = get_option( 'team_member_social_field' );
-			
-			if(empty($team_member_social_field))
-				{
-					$team_member_social_field = array("facebook"=>"facebook","twitter"=>"twitter","googleplus"=>"googleplus","pinterest"=>"pinterest");
-					
-				}
-			
-			
-            foreach ($team_member_social_field as $value) {
-                if(!empty($value) && !empty($team_member_social_links[$value]))
-                    {
-	
-					$team_body.= '<span class="'.$value.'">
-						<a target="_blank" href="'.$team_member_social_links[$value].'"> </a>
-					</span>';
-                    
-                    }
-            }
-			
-			
-
-
-				
-			if(!empty($team_member_website))
-				{
-					$team_body.= '<span class="website">
-						<a target="_blank" href="'.$team_member_website .'"></a>
-					</span>';
-				}				
-
-				
-			if(!empty($team_member_email))
-				{
-					$team_body.= '<span class="email">
-						<a target="_blank" href="mailto:'.$team_member_email .'"></a>
-					</span>';
-				}
-				
-			if(!empty($team_member_skype))
-				{
-					$team_body.= '<span class="skype">
-						<a title="'.$team_member_skype.'" target="_blank" href="skype:'.$team_member_skype.'"></a>
-					</span>';
-				}				
-				
-			$team_body.= '</div>';
-			
-			
-			
-			$team_body.= '<div class="team-content" style="color:'.$team_items_content_color.';font-size:'.$team_items_content_font_size.';height:'.$team_items_content_height.';">'.get_the_content().'
-			</div>			
-			
-			</div>
-
-		</li>';
+		$html.= '</div>';
 		
 		
-
+		$i++;
 		
 		endwhile;
 		
-		wp_reset_query();
-		endif;
+		$html .= '</div>';
 		
+		include team_plugin_dir.'/templates/team-grid-paginate.php';
+		
+		
+		wp_reset_query();
+		
+		endif;
+
+		$html .= '</div>';
+
+		if($team_masonry_enable == 'yes' )
+			{
+				$html .= '<script>
+					jQuery(document).ready(function($) {
+					  var container = document.querySelector("#team-'.$post_id.'.team-items");
+					  var msnry = new Masonry( container, {isFitWidth: true
+					
+					  });
+					});
+					</script>';		
+
+				// masonry css to center align
+				$html .= '<style type="text/css">
+				
+						#team-'.$post_id.'.team-items {
+						  margin: 0 auto !important;
+						}
+						</style>
+						';
+			}
+
+
+
+
+
+
 
 			
-		$team_body .= '</ul></div>';
-		
-		$team_body .= '<script type="text/javascript">
-			jQuery(function($) {
-				$(".team-content").dotdotdot();
 
-			});
-		</script>';
+
+
 		
+
 		
-		return $team_body;
-		
-		    
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	}

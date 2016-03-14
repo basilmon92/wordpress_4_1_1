@@ -1,19 +1,19 @@
 === Redis Object Cache ===
 Contributors: tillkruess
-Donate link: http://till.kruss.me/donations/
+Donate link: https://www.paypal.me/tillkruss
 Tags: redis, predis, hhvm, pecl, caching, cache, object cache, wp object cache, server, performance, optimize, speed, load
 Requires at least: 3.3
-Tested up to: 4.2
-Stable tag: 1.1.1
+Tested up to: 4.4
+Stable tag: 1.2.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-A persistent object cache backend powered by Redis. Supports HHVM's Redis extension, the PCEL Redis Extension and the Predis library for PHP.
+A persistent object cache backend powered by Redis. Supports HHVM's Redis extension, the PECL Redis Extension and the Predis library for PHP.
 
 
 == Description ==
 
-A persistent object cache backend powered by Redis. Supports [HHVM's Redis extension](https://github.com/facebook/hhvm/tree/master/hphp/system/php/redis), the [PCEL Redis Extension](https://github.com/phpredis/phpredis) and the [Predis](https://github.com/nrk/predis/) library for PHP *(Predis requires PHP 5.4 or greater)*.
+A persistent object cache backend powered by Redis. Supports [HHVM's Redis extension](https://github.com/facebook/hhvm/tree/master/hphp/system/php/redis), the [PECL Redis Extension](https://github.com/phpredis/phpredis) and the [Predis](https://github.com/nrk/predis/) library for PHP *(Predis requires PHP 5.4 or greater)*.
 
 To adjust the connection parameters or prefixing cache keys, see [Other Notes](http://wordpress.org/extend/plugins/redis-cache/other_notes/).
 
@@ -26,8 +26,10 @@ For detailed installation instructions, please read the [standard installation p
 
 1. Make sure Redis in installed and running.
 2. Install and activate plugin.
-3. Enable the object cache under _Tools -> Redis_.
+3. Enable the object cache under _Settings -> Redis_.
 4. If necessary, adjust [connection parameters](http://wordpress.org/extend/plugins/redis-cache/other_notes/).
+
+If you server doesn't support the [WordPress Filesystem API](https://codex.wordpress.org/Filesystem_API), you have to manually copy the `object-cache.php` file from the `/plugins/redis-cache/includes/` directory to the `/wp-content/` directory.
 
 
 == Connection Parameters ==
@@ -83,6 +85,33 @@ Users with setups where multiple installs share a common `wp-config.php` or `$ta
 
 == Changelog ==
 
+= 1.2.3 =
+
+  * UI improvements
+
+= 1.2.2 =
+
+  * Added `redis_object_cache_set` action
+  * Added `redis_object_cache_get` action and filter
+  * Prevented duplicated admin status messages
+  * Load bundled Predis library only if necessary
+  * Load bundled Predis library using `WP_CONTENT_DIR` constant
+  * Updated `stats()` method output to be uniform with WordPress
+
+= 1.2.1 =
+
+  * Added `composer.json`
+  * Added deactivation and uninstall hooks to delete `object-cache.php`
+  * Added local serialization functions for better `advanced-cache.php` support
+  * Updated bundled Predis version to `1.0.3`
+  * Updated heading structure to be semantic
+
+= 1.2 =
+
+  * Added Multisite support
+  * Moved admin menu under _Settings_ menu
+  * Fixed PHP notice in `get_redis_client_name()`
+
 = 1.1.1 =
 
   * Call `select()` and optionally `auth()` if HHVM extension is used
@@ -90,7 +119,7 @@ Users with setups where multiple installs share a common `wp-config.php` or `$ta
 = 1.1 =
 
   * Added support for HHVM's Redis extension
-  * Added support for PCEL Redis extension
+  * Added support for PECL Redis extension
   * Added `WP_REDIS_CLIENT` constant, to set prefered Redis client
   * Added `WP_REDIS_MAXTTL` constant, to force expiration of cache keys
   * Improved `add_or_replace()`, `get()`, `set()` and `delete()` methods
@@ -119,13 +148,25 @@ Users with setups where multiple installs share a common `wp-config.php` or `$ta
 
 == Upgrade Notice ==
 
+= 1.2.3 =
+
+This updated includes several UI improvements.
+
+= 1.2.2 =
+
+This updated includes several bug fixes and improvements.
+
+= 1.2.1 =
+
+This update includes several improvements and compatibility fixes.
+
 = 1.1.1 =
 
-This update fixes critial bugs with the HHVM extension
+This update fixes critical bugs with the HHVM extension
 
 = 1.1 =
 
-This update includes bug fixes and adds supports for HHVM/PCEL Redis extensions.
+This update includes bug fixes and adds supports for HHVM/PECL Redis extensions.
 
 = 1.0.2 =
 
