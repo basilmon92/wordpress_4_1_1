@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    David &amp; Goliath &raquo; \WpvTemplates
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">David &amp; Goliath</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/Grunt.html">Grunt</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method_get_layout" title="get_layout :: Returns the current layout type and defines WPV_LAYOUT accordingly">
+            <span class="description">Returns the current layout type and defines WPV_LAYOUT accordingly</span><pre>get_layout</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_left_sidebar" title="left_sidebar :: displays the left sidebar if there is one">
+            <span class="description">displays the left sidebar if there is one</span><pre>left_sidebar</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_right_sidebar" title="right_sidebar :: displays the right sidebar if there is one">
+            <span class="description">displays the right sidebar if there is one</span><pre>right_sidebar</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_pagination_list" title="pagination_list :: Echoes a pagination in the form of 1 2 [3] 4 5">
+            <span class="description">Echoes a pagination in the form of 1 2 [3] 4 5</span><pre>pagination_list</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_pagination" title="pagination :: Displays the pagination code based on the theme options or $pagination_type">
+            <span class="description">Displays the pagination code based on the theme options or $pagination_type</span><pre>pagination</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_has_breadcrumbs" title="has_breadcrumbs :: ">
+            <span class="description"></span><pre>has_breadcrumbs</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_breadcrumbs" title="breadcrumbs :: Displays the breadcrumbs if they are enabled">
+            <span class="description">Displays the breadcrumbs if they are enabled</span><pre>breadcrumbs</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_has_page_header" title="has_page_header :: Checks whether the current page has a title">
+            <span class="description">Checks whether the current page has a title</span><pre>has_page_header</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_page_header_background" title="page_header_background :: Page title background styles">
+            <span class="description">Page title background styles</span><pre>page_header_background</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_readable_color_mixin" title="readable_color_mixin :: Returns a LESS mixin for generating a readable color based on a bg color">
+            <span class="description">Returns a LESS mixin for generating a readable color based on a bg color</span><pre>readable_color_mixin</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_page_header_title_color" title="page_header_title_color :: Page title color">
+            <span class="description">Page title color</span><pre>page_header_title_color</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_has_post_siblings_buttons" title="has_post_siblings_buttons :: Checks whether the current page has post siblings links">
+            <span class="description">Checks whether the current page has post siblings links</span><pre>has_post_siblings_buttons</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_page_header" title="page_header :: Displays the page header">
+            <span class="description">Displays the page header</span><pre>page_header</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_header_sidebars" title="header_sidebars :: Displays the header sidebars">
+            <span class="description">Displays the header sidebars</span><pre>header_sidebars</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_footer_sidebars" title="footer_sidebars :: Displays the footer sidebars">
+            <span class="description">Displays the footer sidebars</span><pre>footer_sidebars</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public">
+        <a href="#method_comments" title="comments :: Comments template">
+            <span class="description">Comments template</span><pre>comments</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_has_share" title="has_share :: Check if the current context has share buttons">
+            <span class="description">Check if the current context has share buttons</span><pre>has_share</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_share" title="share :: Displays share buttons depending on $context">
+            <span class="description">Displays share buttons depending on $context</span><pre>share</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_post_format_icon" title="post_format_icon :: Displays the icon for a post format $format">
+            <span class="description">Displays the icon for a post format $format</span><pre>post_format_icon</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_get_title_style" title="get_title_style :: Outputs the page title styles">
+            <span class="description">Outputs the page title styles</span><pre>get_title_style</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_has_header_slider" title="has_header_slider :: Checks whether the current page has a header slider">
+            <span class="description">Checks whether the current page has a header slider</span><pre>has_header_slider</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_is_login" title="is_login :: Returns true if this is the WP login page">
+            <span class="description">Returns true if this is the WP login page</span><pre>is_login</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_get_all_sliders" title="get_all_sliders :: Returns the list of all embeddable sliders to be used in the config generator">
+            <span class="description">Returns the list of all embeddable sliders to be used in the config generator</span><pre>get_all_sliders</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_get_rev_sliders" title="get_rev_sliders :: Returns the list of Revolution Slider sliders in &#039;revslider-ID&#039; =&gt; &#039;Name&#039; array">
+            <span class="description">Returns the list of Revolution Slider sliders in &#039;revslider-ID&#039; =&gt; &#039;Name&#039; array</span><pre>get_rev_sliders</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_get_layer_sliders" title="get_layer_sliders :: Returns the list of LayerSlider sliders in &#039;layerslider-ID&#039; =&gt; &#039;Name&#039; array">
+            <span class="description">Returns the list of LayerSlider sliders in &#039;layerslider-ID&#039; =&gt; &#039;Name&#039; array</span><pre>get_layer_sliders</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_custom_link_pages" title="custom_link_pages :: The formatted output of a list of pages.">
+            <span class="description">The formatted output of a list of pages.</span><pre>custom_link_pages</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method private">
+                            <a href="#method_header_footer_sidebars" title="header_footer_sidebars :: displays header/footer sidebars">
+                                <span class="description">displays header/footer sidebars</span><pre>header_footer_sidebars</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>WpvTemplates</h1>
+                <small style="display: block; text-align: right">
+                                                        </small>
+                <p class="short_description">class WpvTemplates</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                                                                                                                                                                                            </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method_get_layout"></a>
+                        <div class="element clickable method public  method_get_layout" data-toggle="collapse" data-target=".method_get_layout .collapse">
+                            <h2>Returns the current layout type and defines WPV_LAYOUT accordingly</h2>
+                            <pre>get_layout() : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>current page layout</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_left_sidebar"></a>
+                        <div class="element clickable method public  method_left_sidebar" data-toggle="collapse" data-target=".method_left_sidebar .collapse">
+                            <h2>displays the left sidebar if there is one</h2>
+                            <pre>left_sidebar() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_right_sidebar"></a>
+                        <div class="element clickable method public  method_right_sidebar" data-toggle="collapse" data-target=".method_right_sidebar .collapse">
+                            <h2>displays the right sidebar if there is one</h2>
+                            <pre>right_sidebar() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_pagination_list"></a>
+                        <div class="element clickable method public  method_pagination_list" data-toggle="collapse" data-target=".method_pagination_list .collapse">
+                            <h2>Echoes a pagination in the form of 1 2 [3] 4 5</h2>
+                            <pre>pagination_list() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_pagination"></a>
+                        <div class="element clickable method public  method_pagination" data-toggle="collapse" data-target=".method_pagination .collapse">
+                            <h2>Displays the pagination code based on the theme options or $pagination_type</h2>
+                            <pre>pagination(string|null $pagination_type = null) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pagination_type</h4>
+                                                <code>string|null</code><p><p>overrides the pagination settings</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_has_breadcrumbs"></a>
+                        <div class="element clickable method public  method_has_breadcrumbs" data-toggle="collapse" data-target=".method_has_breadcrumbs .collapse">
+                            <h2>has_breadcrumbs</h2>
+                            <pre>has_breadcrumbs() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_breadcrumbs"></a>
+                        <div class="element clickable method public  method_breadcrumbs" data-toggle="collapse" data-target=".method_breadcrumbs .collapse">
+                            <h2>Displays the breadcrumbs if they are enabled</h2>
+                            <pre>breadcrumbs() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_has_page_header"></a>
+                        <div class="element clickable method public  method_has_page_header" data-toggle="collapse" data-target=".method_has_page_header .collapse">
+                            <h2>Checks whether the current page has a title</h2>
+                            <pre>has_page_header() : boolean</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p><p>whether the current page has a title</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_page_header_background"></a>
+                        <div class="element clickable method public  method_page_header_background" data-toggle="collapse" data-target=".method_page_header_background .collapse">
+                            <h2>Page title background styles</h2>
+                            <pre>page_header_background() : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>background styles</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_readable_color_mixin"></a>
+                        <div class="element clickable method public  method_readable_color_mixin" data-toggle="collapse" data-target=".method_readable_color_mixin .collapse">
+                            <h2>Returns a LESS mixin for generating a readable color based on a bg color</h2>
+                            <pre>readable_color_mixin() : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>LESS mixin</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_page_header_title_color"></a>
+                        <div class="element clickable method public  method_page_header_title_color" data-toggle="collapse" data-target=".method_page_header_title_color .collapse">
+                            <h2>Page title color</h2>
+                            <pre>page_header_title_color() : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>color styles</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_has_post_siblings_buttons"></a>
+                        <div class="element clickable method public  method_has_post_siblings_buttons" data-toggle="collapse" data-target=".method_has_post_siblings_buttons .collapse">
+                            <h2>Checks whether the current page has post siblings links</h2>
+                            <pre>has_post_siblings_buttons() : boolean</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p><p>whether the current page has post siblings links</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_page_header"></a>
+                        <div class="element clickable method public  method_page_header" data-toggle="collapse" data-target=".method_page_header .collapse">
+                            <h2>Displays the page header</h2>
+                            <pre>page_header(bool $placed = false, string|null $title = null) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$placed</h4>
+                                                <code>bool</code><p><p>whether the title has already been output</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$title</h4>
+                                                <code>string|null</code><p><p>if set, overrides the current post title</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_header_sidebars"></a>
+                        <div class="element clickable method public  method_header_sidebars" data-toggle="collapse" data-target=".method_header_sidebars .collapse">
+                            <h2>Displays the header sidebars</h2>
+                            <pre>header_sidebars() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_footer_sidebars"></a>
+                        <div class="element clickable method public  method_footer_sidebars" data-toggle="collapse" data-target=".method_footer_sidebars .collapse">
+                            <h2>Displays the footer sidebars</h2>
+                            <pre>footer_sidebars() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_header_footer_sidebars"></a>
+                        <div class="element clickable method private  method_header_footer_sidebars" data-toggle="collapse" data-target=".method_header_footer_sidebars .collapse">
+                            <h2>displays header/footer sidebars</h2>
+                            <pre>header_footer_sidebars(string $area) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$area</h4>
+                                                <code>string</code><p><p>one of "header" or "footer"</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_comments"></a>
+                        <div class="element clickable method public  method_comments" data-toggle="collapse" data-target=".method_comments .collapse">
+                            <h2>Comments template</h2>
+                            <pre>comments(object $comment, array $args, int $depth) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$comment</h4>
+                                                <code>object</code><p><p>comment data</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$args</h4>
+                                                <code>array</code><p><p>comment arguments</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$depth</h4>
+                                                <code>int</code><p><p>comment depth</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_has_share"></a>
+                        <div class="element clickable method public  method_has_share" data-toggle="collapse" data-target=".method_has_share .collapse">
+                            <h2>Check if the current context has share buttons</h2>
+                            <pre>has_share(string $context) : boolean</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$context</h4>
+                                                <code>string</code><p><p>current view ( page, post, etc. )</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p><p>whether the current context has share buttons</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_share"></a>
+                        <div class="element clickable method public  method_share" data-toggle="collapse" data-target=".method_share .collapse">
+                            <h2>Displays share buttons depending on $context</h2>
+                            <pre>share(string $context) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$context</h4>
+                                                <code>string</code><p><p>current view ( page, post, etc. )</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_post_format_icon"></a>
+                        <div class="element clickable method public  method_post_format_icon" data-toggle="collapse" data-target=".method_post_format_icon .collapse">
+                            <h2>Displays the icon for a post format $format</h2>
+                            <pre>post_format_icon(string $format) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$format</h4>
+                                                <code>string</code><p><p>post format slug</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>icon html</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_get_title_style"></a>
+                        <div class="element clickable method public  method_get_title_style" data-toggle="collapse" data-target=".method_get_title_style .collapse">
+                            <h2>Outputs the page title styles</h2>
+                            <pre>get_title_style() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_has_header_slider"></a>
+                        <div class="element clickable method public  method_has_header_slider" data-toggle="collapse" data-target=".method_has_header_slider .collapse">
+                            <h2>Checks whether the current page has a header slider</h2>
+                            <pre>has_header_slider() : boolean</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p><p>true if there is a header slider</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_is_login"></a>
+                        <div class="element clickable method public  method_is_login" data-toggle="collapse" data-target=".method_is_login .collapse">
+                            <h2>Returns true if this is the WP login page</h2>
+                            <pre>is_login() : bool</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p><p>whether the current page is wp-login</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_get_all_sliders"></a>
+                        <div class="element clickable method public  method_get_all_sliders" data-toggle="collapse" data-target=".method_get_all_sliders .collapse">
+                            <h2>Returns the list of all embeddable sliders to be used in the config generator</h2>
+                            <pre>get_all_sliders() : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p><p>list of sliders</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_get_rev_sliders"></a>
+                        <div class="element clickable method public  method_get_rev_sliders" data-toggle="collapse" data-target=".method_get_rev_sliders .collapse">
+                            <h2>Returns the list of Revolution Slider sliders in &#039;revslider-ID&#039; =&gt; &#039;Name&#039; array</h2>
+                            <pre>get_rev_sliders($prefix = &#039;revslider-&#039;) : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$prefix</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p><p>list of Revolution Slider WP sliders</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_get_layer_sliders"></a>
+                        <div class="element clickable method public  method_get_layer_sliders" data-toggle="collapse" data-target=".method_get_layer_sliders .collapse">
+                            <h2>Returns the list of LayerSlider sliders in &#039;layerslider-ID&#039; =&gt; &#039;Name&#039; array</h2>
+                            <pre>get_layer_sliders($prefix = &#039;layerslider-&#039;) : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$prefix</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p><p>list of LayerSlider WP sliders</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_custom_link_pages"></a>
+                        <div class="element clickable method public  method_custom_link_pages" data-toggle="collapse" data-target=".method_custom_link_pages .collapse">
+                            <h2>The formatted output of a list of pages.</h2>
+                            <pre>custom_link_pages(string|array $args = &#039;&#039;) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Displays page links for paginated posts ( i.e. includes the "nextpage".
+Quicktag one or more times ). This tag must be within The Loop.</p>
+<p>The defaults for overwriting are:
+'next_or_number' - Default is 'number' ( string ). Indicates whether page</p>
+<pre><code> numbers should be used. Valid values are number and next.</code></pre>
+<p>'nextpagelink' - Default is 'Next Page' ( string ). Text for link to next page.</p>
+<pre><code> of the bookmark.</code></pre>
+<p>'previouspagelink' - Default is 'Previous Page' ( string ). Text for link to</p>
+<pre><code> previous page, if available.</code></pre>
+<p>'pagelink' - Default is '%' ( String ).Format string for page numbers. The % in</p>
+<pre><code> the parameter string will be replaced with the page number, so Page %
+ generates "Page 1", "Page 2", etc. Defaults to %, just the page number.</code></pre>
+<p>'before' - Default is '<p id="post-pagination"> Pages:' ( string ). The html</p>
+<pre><code> or text to prepend to each bookmarks.</code></pre>
+<p>'after' - Default is '</p>' ( string ). The html or text to append to each</p>
+<pre><code> bookmarks.</code></pre>
+<p>'text_before' - Default is '' ( string ). The text to prepend to each Pages link</p>
+<pre><code> inside the &lt;a&gt; tag. Also prepended to the current item, which is not linked.</code></pre>
+<p>'text_after' - Default is '' ( string ). The text to append to each Pages link</p>
+<pre><code> inside the &lt;a&gt; tag. Also appended to the current item, which is not linked.</code></pre></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$args</h4>
+                                                <code>string|array</code><p><p>Optional. Overwrite the defaults.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>Formatted output in HTML.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                    
+                    
+                                                        </div>
+            </div>
+            <a id="\WpvTemplates"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/default.html">\</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/WpvTemplates.html">WpvTemplates</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Thu, 26 Jun 2014 15:19:50 +0100.<br/>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,2332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    David &amp; Goliath &raquo; \WpvMobileDetect
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">David &amp; Goliath</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/Grunt.html">Grunt</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method_get_instance" title="get_instance :: Get an instance of this class">
+            <span class="description">Get an instance of this class</span><pre>get_instance</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method___construct" title="__construct :: Construct an instance of this class.">
+            <span class="description">Construct an instance of this class.</span><pre>__construct</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getScriptVersion" title="getScriptVersion :: Get the current script version.">
+            <span class="description">Get the current script version.</span><pre>getScriptVersion</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setHttpHeaders" title="setHttpHeaders :: Set the HTTP Headers. Must be PHP-flavored. This method will reset existing headers.">
+            <span class="description">Set the HTTP Headers. Must be PHP-flavored. This method will reset existing headers.</span><pre>setHttpHeaders</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getHttpHeaders" title="getHttpHeaders :: Retrieves the HTTP headers.">
+            <span class="description">Retrieves the HTTP headers.</span><pre>getHttpHeaders</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getHttpHeader" title="getHttpHeader :: Retrieves a particular header. If it doesn&#039;t exist, no exception/error is caused.">
+            <span class="description">Retrieves a particular header. If it doesn&#039;t exist, no exception/error is caused.</span><pre>getHttpHeader</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getMobileHeaders" title="getMobileHeaders :: ">
+            <span class="description"></span><pre>getMobileHeaders</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getUaHttpHeaders" title="getUaHttpHeaders :: Get all possible HTTP headers that
+can contain the User-Agent string.">
+            <span class="description">Get all possible HTTP headers that
+can contain the User-Agent string.</span><pre>getUaHttpHeaders</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setUserAgent" title="setUserAgent :: Set the User-Agent to be used.">
+            <span class="description">Set the User-Agent to be used.</span><pre>setUserAgent</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getUserAgent" title="getUserAgent :: Retrieve the User-Agent.">
+            <span class="description">Retrieve the User-Agent.</span><pre>getUserAgent</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setDetectionType" title="setDetectionType :: Set the detection type. Must be one of self::DETECTION_TYPE_MOBILE or
+self::DETECTION_TYPE_EXTENDED. Otherwise, nothing is set.">
+            <span class="description">Set the detection type. Must be one of self::DETECTION_TYPE_MOBILE or
+self::DETECTION_TYPE_EXTENDED. Otherwise, nothing is set.</span><pre>setDetectionType</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getPhoneDevices" title="getPhoneDevices :: Retrieve the list of known phone devices.">
+            <span class="description">Retrieve the list of known phone devices.</span><pre>getPhoneDevices</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getTabletDevices" title="getTabletDevices :: Retrieve the list of known tablet devices.">
+            <span class="description">Retrieve the list of known tablet devices.</span><pre>getTabletDevices</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getUserAgents" title="getUserAgents :: Alias for getBrowsers() method.">
+            <span class="description">Alias for getBrowsers() method.</span><pre>getUserAgents</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getBrowsers" title="getBrowsers :: Retrieve the list of known browsers. Specifically, the user agents.">
+            <span class="description">Retrieve the list of known browsers. Specifically, the user agents.</span><pre>getBrowsers</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getUtilities" title="getUtilities :: Retrieve the list of known utilities.">
+            <span class="description">Retrieve the list of known utilities.</span><pre>getUtilities</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getMobileDetectionRules" title="getMobileDetectionRules :: Method gets the mobile detection rules. This method is used for the magic methods $detect-&gt;is*().">
+            <span class="description">Method gets the mobile detection rules. This method is used for the magic methods $detect-&gt;is*().</span><pre>getMobileDetectionRules</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getMobileDetectionRulesExtended" title="getMobileDetectionRulesExtended :: Method gets the mobile detection rules + utilities.">
+            <span class="description">Method gets the mobile detection rules + utilities.</span><pre>getMobileDetectionRulesExtended</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getRules" title="getRules :: Retrieve the current set of rules.">
+            <span class="description">Retrieve the current set of rules.</span><pre>getRules</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getOperatingSystems" title="getOperatingSystems :: Retrieve the list of mobile operating systems.">
+            <span class="description">Retrieve the list of mobile operating systems.</span><pre>getOperatingSystems</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_checkHttpHeadersForMobile" title="checkHttpHeadersForMobile :: Check the HTTP headers for signs of mobile.">
+            <span class="description">Check the HTTP headers for signs of mobile.</span><pre>checkHttpHeadersForMobile</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method___call" title="__call :: Magic overloading method.">
+            <span class="description">Magic overloading method.</span><pre>__call</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                                                                        <li class="method public">
+        <a href="#method_isMobile" title="isMobile :: Check if the device is mobile.">
+            <span class="description">Check if the device is mobile.</span><pre>isMobile</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_isTablet" title="isTablet :: Check if the device is a tablet.">
+            <span class="description">Check if the device is a tablet.</span><pre>isTablet</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_is" title="is :: This method checks for a certain property in the
+userAgent.">
+            <span class="description">This method checks for a certain property in the
+userAgent.</span><pre>is</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_match" title="match :: Some detection rules are relative (not standard),
+because of the diversity of devices, vendors and
+their conventions in representing the User-Agent or
+the HTTP headers.">
+            <span class="description">Some detection rules are relative (not standard),
+because of the diversity of devices, vendors and
+their conventions in representing the User-Agent or
+the HTTP headers.</span><pre>match</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getProperties" title="getProperties :: Get the properties array.">
+            <span class="description">Get the properties array.</span><pre>getProperties</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_prepareVersionNo" title="prepareVersionNo :: Prepare the version number.">
+            <span class="description">Prepare the version number.</span><pre>prepareVersionNo</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_version" title="version :: Check the version of the given property in the User-Agent.">
+            <span class="description">Check the version of the given property in the User-Agent.</span><pre>version</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_mobileGrade" title="mobileGrade :: Retrieve the mobile grading, using self::MOBILE_GRADE_* constants.">
+            <span class="description">Retrieve the mobile grading, using self::MOBILE_GRADE_* constants.</span><pre>mobileGrade</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method protected">
+                            <a href="#method_matchDetectionRulesAgainstUA" title="matchDetectionRulesAgainstUA :: Find a detection rule that matches the current User-agent.">
+                                <span class="description">Find a detection rule that matches the current User-agent.</span><pre>matchDetectionRulesAgainstUA</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_matchUAAgainstKey" title="matchUAAgainstKey :: Search for a certain key in the rules array.">
+                                <span class="description">Search for a certain key in the rules array.</span><pre>matchUAAgainstKey</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                                <li class="constant ">
+                    <a href="#constant_DETECTION_TYPE_MOBILE" title="DETECTION_TYPE_MOBILE :: Mobile detection type.">
+                        <span class="description">Mobile detection type.</span><pre>DETECTION_TYPE_MOBILE</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_DETECTION_TYPE_EXTENDED" title="DETECTION_TYPE_EXTENDED :: Extended detection type.">
+                        <span class="description">Extended detection type.</span><pre>DETECTION_TYPE_EXTENDED</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_VER" title="VER :: A frequently used regular expression to extract version #s.">
+                        <span class="description">A frequently used regular expression to extract version #s.</span><pre>VER</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_MOBILE_GRADE_A" title="MOBILE_GRADE_A :: Top-level device.">
+                        <span class="description">Top-level device.</span><pre>MOBILE_GRADE_A</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_MOBILE_GRADE_B" title="MOBILE_GRADE_B :: Mid-level device.">
+                        <span class="description">Mid-level device.</span><pre>MOBILE_GRADE_B</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_MOBILE_GRADE_C" title="MOBILE_GRADE_C :: Low-level device.">
+                        <span class="description">Low-level device.</span><pre>MOBILE_GRADE_C</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_VERSION" title="VERSION :: Stores the version number of the current release.">
+                        <span class="description">Stores the version number of the current release.</span><pre>VERSION</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_VERSION_TYPE_STRING" title="VERSION_TYPE_STRING :: A type for the version() method indicating a string return value.">
+                        <span class="description">A type for the version() method indicating a string return value.</span><pre>VERSION_TYPE_STRING</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_VERSION_TYPE_FLOAT" title="VERSION_TYPE_FLOAT :: A type for the version() method indicating a float return value.">
+                        <span class="description">A type for the version() method indicating a float return value.</span><pre>VERSION_TYPE_FLOAT</pre>
+                    </a>
+                </li>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>WpvMobileDetect</h1>
+                <small style="display: block; text-align: right">
+                                                        </small>
+                <p class="short_description">Mobile Detect Library
+=====================</p>
+                <div class="details">
+                    <div class="long_description">
+                        <p>Motto: "Every business should have a mobile detection script to detect mobile readers"</p>
+<p>WpvMobileDetect is a lightweight PHP class for detecting mobile devices (including tablets).
+It uses the User-Agent string combined with specific HTTP headers to detect the mobile environment.</p>
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        author
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Current authors: Serban Ghita <a href="mailto:serbanghita@gmail.com">serbanghita@gmail.com</a>, Nick Ilyin <a href="mailto:nick.ilyin@gmail.com">nick.ilyin@gmail.com</a></p>
+<pre><code>         Original author: Victor Stanciu &lt;vic.stanciu@gmail.com&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        license
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Code and contributions have 'MIT License'</p>
+<pre><code>         More details: https://github.com/serbanghita/Mobile-Detect/blob/master/LICENSE.txt</code></pre>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        link
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p><a href="http://mobiledetect.net">http://mobiledetect.net</a></p>
+<pre><code>         GitHub Repo:  https://github.com/serbanghita/Mobile-Detect
+         Google Code:  http://code.google.com/p/php-mobile-detect/
+         README:       https://github.com/serbanghita/Mobile-Detect/blob/master/README.md
+         HOWTO:        https://github.com/serbanghita/Mobile-Detect/wiki/Code-examples</code></pre>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        version
+                                                                            </th>
+                                    <td>
+                                                                                    2.7.7
+                                                                                
+                                    </td>
+                                </tr>
+                                                                                                                                                                                                                                                                                        </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method_get_instance"></a>
+                        <div class="element clickable method public  method_get_instance" data-toggle="collapse" data-target=".method_get_instance .collapse">
+                            <h2>Get an instance of this class</h2>
+                            <pre>get_instance() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method___construct"></a>
+                        <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>Construct an instance of this class.</h2>
+                            <pre>__construct(array $headers = null, string $userAgent = null) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$headers</h4>
+                                                <code>array</code><p><p>Specify the headers as injection. Should be PHP _SERVER flavored.</p>
+<pre><code>                  If left empty, will use the global _SERVER['HTTP_*'] vars instead.</code></pre></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$userAgent</h4>
+                                                <code>string</code><p><p>Inject the User-Agent header. If null, will use HTTP_USER_AGENT</p>
+<pre><code>                     from the $headers array instead.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getScriptVersion"></a>
+                        <div class="element clickable method public  method_getScriptVersion" data-toggle="collapse" data-target=".method_getScriptVersion .collapse">
+                            <h2>Get the current script version.</h2>
+                            <pre>getScriptVersion() : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This is useful for the demo.php file,
+so people can check on what version they are testing
+for mobile devices.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>The version number in semantic version format.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setHttpHeaders"></a>
+                        <div class="element clickable method public  method_setHttpHeaders" data-toggle="collapse" data-target=".method_setHttpHeaders .collapse">
+                            <h2>Set the HTTP Headers. Must be PHP-flavored. This method will reset existing headers.</h2>
+                            <pre>setHttpHeaders(array $httpHeaders = null) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$httpHeaders</h4>
+                                                <code>array</code><p><p>The headers to set. If null, then using PHP's _SERVER to extract</p>
+<pre><code>                      the headers. The default null is left for backwards compatibilty.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getHttpHeaders"></a>
+                        <div class="element clickable method public  method_getHttpHeaders" data-toggle="collapse" data-target=".method_getHttpHeaders .collapse">
+                            <h2>Retrieves the HTTP headers.</h2>
+                            <pre>getHttpHeaders() : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getHttpHeader"></a>
+                        <div class="element clickable method public  method_getHttpHeader" data-toggle="collapse" data-target=".method_getHttpHeader .collapse">
+                            <h2>Retrieves a particular header. If it doesn&#039;t exist, no exception/error is caused.</h2>
+                            <pre>getHttpHeader(string $header) : string|null</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Simply null is returned.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$header</h4>
+                                                <code>string</code><p><p>The name of the header to retrieve. Can be HTTP compliant such as</p>
+<pre><code>                  "User-Agent" or "X-Device-User-Agent" or can be php-esque with the
+                  all-caps, HTTP_ prefixed, underscore seperated awesomeness.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string|null</code><p><p>The value of the header.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getMobileHeaders"></a>
+                        <div class="element clickable method public  method_getMobileHeaders" data-toggle="collapse" data-target=".method_getMobileHeaders .collapse">
+                            <h2>getMobileHeaders</h2>
+                            <pre>getMobileHeaders() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getUaHttpHeaders"></a>
+                        <div class="element clickable method public  method_getUaHttpHeaders" data-toggle="collapse" data-target=".method_getUaHttpHeaders .collapse">
+                            <h2>Get all possible HTTP headers that
+can contain the User-Agent string.</h2>
+                            <pre>getUaHttpHeaders() : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p><p>List of HTTP headers.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setUserAgent"></a>
+                        <div class="element clickable method public  method_setUserAgent" data-toggle="collapse" data-target=".method_setUserAgent .collapse">
+                            <h2>Set the User-Agent to be used.</h2>
+                            <pre>setUserAgent(string $userAgent = null) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$userAgent</h4>
+                                                <code>string</code><p><p>The user agent string to set.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getUserAgent"></a>
+                        <div class="element clickable method public  method_getUserAgent" data-toggle="collapse" data-target=".method_getUserAgent .collapse">
+                            <h2>Retrieve the User-Agent.</h2>
+                            <pre>getUserAgent() : string|null</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string|null</code><p><p>The user agent if it's set.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setDetectionType"></a>
+                        <div class="element clickable method public deprecated method_setDetectionType" data-toggle="collapse" data-target=".method_setDetectionType .collapse">
+                            <h2>Set the detection type. Must be one of self::DETECTION_TYPE_MOBILE or
+self::DETECTION_TYPE_EXTENDED. Otherwise, nothing is set.</h2>
+                            <pre>setDetectionType(string $type = null) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>since version 2.6.9</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$type</h4>
+                                                <code>string</code><p><p>The type. Must be a self::DETECTION<em>TYPE</em>* constant. The default</p>
+<pre><code>                parameter is null which will default to self::DETECTION_TYPE_MOBILE.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getPhoneDevices"></a>
+                        <div class="element clickable method public  method_getPhoneDevices" data-toggle="collapse" data-target=".method_getPhoneDevices .collapse">
+                            <h2>Retrieve the list of known phone devices.</h2>
+                            <pre>getPhoneDevices() : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p><p>List of phone devices.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getTabletDevices"></a>
+                        <div class="element clickable method public  method_getTabletDevices" data-toggle="collapse" data-target=".method_getTabletDevices .collapse">
+                            <h2>Retrieve the list of known tablet devices.</h2>
+                            <pre>getTabletDevices() : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p><p>List of tablet devices.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getUserAgents"></a>
+                        <div class="element clickable method public  method_getUserAgents" data-toggle="collapse" data-target=".method_getUserAgents .collapse">
+                            <h2>Alias for getBrowsers() method.</h2>
+                            <pre>getUserAgents() : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p><p>List of user agents.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getBrowsers"></a>
+                        <div class="element clickable method public  method_getBrowsers" data-toggle="collapse" data-target=".method_getBrowsers .collapse">
+                            <h2>Retrieve the list of known browsers. Specifically, the user agents.</h2>
+                            <pre>getBrowsers() : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p><p>List of browsers / user agents.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getUtilities"></a>
+                        <div class="element clickable method public  method_getUtilities" data-toggle="collapse" data-target=".method_getUtilities .collapse">
+                            <h2>Retrieve the list of known utilities.</h2>
+                            <pre>getUtilities() : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p><p>List of utilities.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getMobileDetectionRules"></a>
+                        <div class="element clickable method public deprecated method_getMobileDetectionRules" data-toggle="collapse" data-target=".method_getMobileDetectionRules .collapse">
+                            <h2>Method gets the mobile detection rules. This method is used for the magic methods $detect-&gt;is*().</h2>
+                            <pre>getMobileDetectionRules() : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>since version 2.6.9</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p><p>All the rules (but not extended).</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getMobileDetectionRulesExtended"></a>
+                        <div class="element clickable method public deprecated method_getMobileDetectionRulesExtended" data-toggle="collapse" data-target=".method_getMobileDetectionRulesExtended .collapse">
+                            <h2>Method gets the mobile detection rules + utilities.</h2>
+                            <pre>getMobileDetectionRulesExtended() : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>The reason this is separate is because utilities rules
+don't necessary imply mobile. This method is used inside
+the new $detect->is('stuff') method.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>since version 2.6.9</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p><p>All the rules + extended.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getRules"></a>
+                        <div class="element clickable method public deprecated method_getRules" data-toggle="collapse" data-target=".method_getRules .collapse">
+                            <h2>Retrieve the current set of rules.</h2>
+                            <pre>getRules() : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>since version 2.6.9</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getOperatingSystems"></a>
+                        <div class="element clickable method public  method_getOperatingSystems" data-toggle="collapse" data-target=".method_getOperatingSystems .collapse">
+                            <h2>Retrieve the list of mobile operating systems.</h2>
+                            <pre>getOperatingSystems() : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p><p>The list of mobile operating systems.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_checkHttpHeadersForMobile"></a>
+                        <div class="element clickable method public  method_checkHttpHeadersForMobile" data-toggle="collapse" data-target=".method_checkHttpHeadersForMobile .collapse">
+                            <h2>Check the HTTP headers for signs of mobile.</h2>
+                            <pre>checkHttpHeadersForMobile() : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This is the fastest mobile check possible; it's used
+inside isMobile() method.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method___call"></a>
+                        <div class="element clickable method public  method___call" data-toggle="collapse" data-target=".method___call .collapse">
+                            <h2>Magic overloading method.</h2>
+                            <pre>__call(string $name, array $arguments) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    method
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>boolean is<a href="">...</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>when the method doesn't exist and doesn't start with 'is'</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$arguments</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_matchDetectionRulesAgainstUA"></a>
+                        <div class="element clickable method protected  method_matchDetectionRulesAgainstUA" data-toggle="collapse" data-target=".method_matchDetectionRulesAgainstUA .collapse">
+                            <h2>Find a detection rule that matches the current User-agent.</h2>
+                            <pre>matchDetectionRulesAgainstUA(null $userAgent = null) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$userAgent</h4>
+                                                <code>null</code><p><p>deprecated</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_matchUAAgainstKey"></a>
+                        <div class="element clickable method protected  method_matchUAAgainstKey" data-toggle="collapse" data-target=".method_matchUAAgainstKey .collapse">
+                            <h2>Search for a certain key in the rules array.</h2>
+                            <pre>matchUAAgainstKey(string $key, null $userAgent = null) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>If the key is found the try to match the corresponding
+regex agains the User-Agent.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$key</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$userAgent</h4>
+                                                <code>null</code><p><p>deprecated</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_isMobile"></a>
+                        <div class="element clickable method public  method_isMobile" data-toggle="collapse" data-target=".method_isMobile .collapse">
+                            <h2>Check if the device is mobile.</h2>
+                            <pre>isMobile(null $userAgent = null, null $httpHeaders = null) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Returns true if any type of mobile device detected, including special ones</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$userAgent</h4>
+                                                <code>null</code><p><p>deprecated</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$httpHeaders</h4>
+                                                <code>null</code><p><p>deprecated</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_isTablet"></a>
+                        <div class="element clickable method public  method_isTablet" data-toggle="collapse" data-target=".method_isTablet .collapse">
+                            <h2>Check if the device is a tablet.</h2>
+                            <pre>isTablet(string $userAgent = null, array $httpHeaders = null) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Return true if any type of tablet device is detected.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$userAgent</h4>
+                                                <code>string</code><p><p>deprecated</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$httpHeaders</h4>
+                                                <code>array</code><p><p>deprecated</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_is"></a>
+                        <div class="element clickable method public  method_is" data-toggle="collapse" data-target=".method_is .collapse">
+                            <h2>This method checks for a certain property in the
+userAgent.</h2>
+                            <pre>is(mixed $key, string $userAgent = null, string $httpHeaders = null) : bool|int|null</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    todo
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>: The httpHeaders part is not yet used.</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$key</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$userAgent</h4>
+                                                <code>string</code><p><p>deprecated</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$httpHeaders</h4>
+                                                <code>string</code><p><p>deprecated</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool|int|null</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_match"></a>
+                        <div class="element clickable method public  method_match" data-toggle="collapse" data-target=".method_match .collapse">
+                            <h2>Some detection rules are relative (not standard),
+because of the diversity of devices, vendors and
+their conventions in representing the User-Agent or
+the HTTP headers.</h2>
+                            <pre>match(mixed $regex, string $userAgent = null) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This method will be used to check custom regexes against
+the User-Agent string.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    todo
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>: search in the HTTP headers too.</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$regex</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$userAgent</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getProperties"></a>
+                        <div class="element clickable method public  method_getProperties" data-toggle="collapse" data-target=".method_getProperties .collapse">
+                            <h2>Get the properties array.</h2>
+                            <pre>getProperties() : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_prepareVersionNo"></a>
+                        <div class="element clickable method public  method_prepareVersionNo" data-toggle="collapse" data-target=".method_prepareVersionNo .collapse">
+                            <h2>Prepare the version number.</h2>
+                            <pre>prepareVersionNo(string $ver) : float</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    todo
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Remove the error supression from str_replace() call.</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$ver</h4>
+                                                <code>string</code><p><p>The string version, like "2.6.21.2152";</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>float</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_version"></a>
+                        <div class="element clickable method public  method_version" data-toggle="collapse" data-target=".method_version .collapse">
+                            <h2>Check the version of the given property in the User-Agent.</h2>
+                            <pre>version(string $propertyName, string $type = self::VERSION_TYPE_STRING) : string|float</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Will return a float number. (eg. 2_0 will return 2.0, 4.3.1 will return 4.31)</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$propertyName</h4>
+                                                <code>string</code><p><p>The name of the property. See self::getProperties() array</p>
+<pre><code>                         keys for all possible properties.</code></pre></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$type</h4>
+                                                <code>string</code><p><p>Either self::VERSION_TYPE_STRING to get a string value or</p>
+<pre><code>                 self::VERSION_TYPE_FLOAT indicating a float value. This parameter
+                 is optional and defaults to self::VERSION_TYPE_STRING. Passing an
+                 invalid parameter will default to the this type as well.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string|float</code><p><p>The version of the property we are trying to extract.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_mobileGrade"></a>
+                        <div class="element clickable method public  method_mobileGrade" data-toggle="collapse" data-target=".method_mobileGrade .collapse">
+                            <h2>Retrieve the mobile grading, using self::MOBILE_GRADE_* constants.</h2>
+                            <pre>mobileGrade() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>One of the self::MOBILE<em>GRADE</em>* constants.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                    
+                                            <h3><i class="icon-custom icon-constant"></i> Constants</h3>
+                                                    <a id="constant_DETECTION_TYPE_MOBILE"> </a>
+                            <div class="element clickable constant deprecated constant_DETECTION_TYPE_MOBILE" data-toggle="collapse" data-target=".constant_DETECTION_TYPE_MOBILE .collapse">
+                                <h2>Mobile detection type.</h2>
+                                <pre>DETECTION_TYPE_MOBILE</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        deprecated
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>since version 2.6.9</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_DETECTION_TYPE_EXTENDED"> </a>
+                            <div class="element clickable constant deprecated constant_DETECTION_TYPE_EXTENDED" data-toggle="collapse" data-target=".constant_DETECTION_TYPE_EXTENDED .collapse">
+                                <h2>Extended detection type.</h2>
+                                <pre>DETECTION_TYPE_EXTENDED</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        deprecated
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>since version 2.6.9</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_VER"> </a>
+                            <div class="element clickable constant deprecated constant_VER" data-toggle="collapse" data-target=".constant_VER .collapse">
+                                <h2>A frequently used regular expression to extract version #s.</h2>
+                                <pre>VER</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        deprecated
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>since version 2.6.9</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_MOBILE_GRADE_A"> </a>
+                            <div class="element clickable constant  constant_MOBILE_GRADE_A" data-toggle="collapse" data-target=".constant_MOBILE_GRADE_A .collapse">
+                                <h2>Top-level device.</h2>
+                                <pre>MOBILE_GRADE_A</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_MOBILE_GRADE_B"> </a>
+                            <div class="element clickable constant  constant_MOBILE_GRADE_B" data-toggle="collapse" data-target=".constant_MOBILE_GRADE_B .collapse">
+                                <h2>Mid-level device.</h2>
+                                <pre>MOBILE_GRADE_B</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_MOBILE_GRADE_C"> </a>
+                            <div class="element clickable constant  constant_MOBILE_GRADE_C" data-toggle="collapse" data-target=".constant_MOBILE_GRADE_C .collapse">
+                                <h2>Low-level device.</h2>
+                                <pre>MOBILE_GRADE_C</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_VERSION"> </a>
+                            <div class="element clickable constant  constant_VERSION" data-toggle="collapse" data-target=".constant_VERSION .collapse">
+                                <h2>Stores the version number of the current release.</h2>
+                                <pre>VERSION</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_VERSION_TYPE_STRING"> </a>
+                            <div class="element clickable constant  constant_VERSION_TYPE_STRING" data-toggle="collapse" data-target=".constant_VERSION_TYPE_STRING .collapse">
+                                <h2>A type for the version() method indicating a string return value.</h2>
+                                <pre>VERSION_TYPE_STRING</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_VERSION_TYPE_FLOAT"> </a>
+                            <div class="element clickable constant  constant_VERSION_TYPE_FLOAT" data-toggle="collapse" data-target=".constant_VERSION_TYPE_FLOAT .collapse">
+                                <h2>A type for the version() method indicating a float return value.</h2>
+                                <pre>VERSION_TYPE_FLOAT</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                            
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_userAgent"> </a>
+                            <div class="element clickable property  protected property_userAgent" data-toggle="collapse" data-target=".property_userAgent .collapse">
+                                <h2>The User-Agent HTTP header is stored in here.</h2>
+                                <pre>userAgent : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_httpHeaders"> </a>
+                            <div class="element clickable property  protected property_httpHeaders" data-toggle="collapse" data-target=".property_httpHeaders .collapse">
+                                <h2>HTTP headers in the PHP-flavor. So HTTP_USER_AGENT and SERVER_SOFTWARE.</h2>
+                                <pre>httpHeaders : array</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_detectionType"> </a>
+                            <div class="element clickable property deprecated protected property_detectionType" data-toggle="collapse" data-target=".property_detectionType .collapse">
+                                <h2>The detection type, using self::DETECTION_TYPE_MOBILE or self::DETECTION_TYPE_EXTENDED.</h2>
+                                <pre>detectionType : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        deprecated
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>since version 2.6.9</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_mobileHeaders"> </a>
+                            <div class="element clickable property  protected property_mobileHeaders" data-toggle="collapse" data-target=".property_mobileHeaders .collapse">
+                                <h2>HTTP headers that trigger the &#039;isMobile&#039; detection
+to be true.</h2>
+                                <pre>mobileHeaders : array</pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_phoneDevices"> </a>
+                            <div class="element clickable property  protected property_phoneDevices" data-toggle="collapse" data-target=".property_phoneDevices .collapse">
+                                <h2>List of mobile devices (phones).</h2>
+                                <pre>phoneDevices : array</pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_tabletDevices"> </a>
+                            <div class="element clickable property  protected property_tabletDevices" data-toggle="collapse" data-target=".property_tabletDevices .collapse">
+                                <h2>List of tablet devices.</h2>
+                                <pre>tabletDevices : array</pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_operatingSystems"> </a>
+                            <div class="element clickable property  protected property_operatingSystems" data-toggle="collapse" data-target=".property_operatingSystems .collapse">
+                                <h2>List of mobile Operating Systems.</h2>
+                                <pre>operatingSystems : array</pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_browsers"> </a>
+                            <div class="element clickable property  protected property_browsers" data-toggle="collapse" data-target=".property_browsers .collapse">
+                                <h2>List of mobile User Agents.</h2>
+                                <pre>browsers : array</pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_utilities"> </a>
+                            <div class="element clickable property  protected property_utilities" data-toggle="collapse" data-target=".property_utilities .collapse">
+                                <h2>Utilities.</h2>
+                                <pre>utilities : array</pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_uaHttpHeaders"> </a>
+                            <div class="element clickable property  protected property_uaHttpHeaders" data-toggle="collapse" data-target=".property_uaHttpHeaders .collapse">
+                                <h2>All possible HTTP headers that represent the
+User-Agent string.</h2>
+                                <pre>uaHttpHeaders : array</pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_properties"> </a>
+                            <div class="element clickable property  protected property_properties" data-toggle="collapse" data-target=".property_properties .collapse">
+                                <h2>The individual segments that could exist in a User-Agent string. VER refers to the regular
+expression defined in the constant self::VER.</h2>
+                                <pre>properties : array</pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_instance"> </a>
+                            <div class="element clickable property  private property_instance" data-toggle="collapse" data-target=".property_instance .collapse">
+                                <h2>instance</h2>
+                                <pre>instance : </pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\WpvMobileDetect"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/default.html">\</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/WpvMobileDetect.html">WpvMobileDetect</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Thu, 26 Jun 2014 15:19:50 +0100.<br/>
+    </footer>
+    </body>
+</html>

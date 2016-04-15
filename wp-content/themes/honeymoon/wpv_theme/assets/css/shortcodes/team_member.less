@@ -1,0 +1,126 @@
+.team-member-row {
+	position: relative;
+	z-index: 60;
+
+	> div { // columns
+		position: static;
+	}
+}
+
+/* Force floats adjustment */
+@media all and (-webkit-min-device-pixel-ratio: 0) {
+	.team-member-row {
+		display: inline-table;
+		width: 100%;
+		table-layout: fixed;
+	}
+}
+
+.team-member {
+	text-align: center;
+
+	&:hover {
+		.thumbnail {
+			img {
+				background: @accent-color-1;
+				border-color: @accent-color-1;
+			}
+
+			&:before,
+			&:after {
+				border-top-color: @accent-color-1;
+			}
+		}
+	}
+
+	.sep-text {
+		margin: 0 0 20px 0;
+
+	}
+
+	.thumbnail {
+		@triangle-size: 10px;
+		position: relative;
+		padding-bottom: @triangle-size;
+
+		img {
+			display: inline-block;
+			padding: 15px 7px 5px 8px;
+			border: 1px solid @default-line-color;
+			border-radius: 50%;
+			vertical-align: top;
+			transition: background .3s ease, border .3s ease;
+		}
+
+		&:before,
+		&:after {
+			position: absolute;
+			bottom: 1px;
+			left: 50%;
+			display: block;
+			margin-left: -@triangle-size;
+			width: 0;
+			height: 0;
+			border: @triangle-size solid transparent;
+			border-top-color: @default-line-color;
+			border-bottom: 0;
+			content: "";
+			transition: border .3s ease;
+		}
+
+		&:after {
+			bottom: 2px;
+			margin-left: -@triangle-size;
+			border-width: @triangle-size;
+			border-top-color: @default-bg-color;
+			border-bottom: 0;
+		}
+	}
+
+	.team-member-info {
+		margin-top: 5px;
+		padding: 5px 5px 0;
+		background: transparent;
+	}
+
+	.team-member-position {
+		text-transform: uppercase;
+		font-size: 11px;
+
+	}
+
+    .team-member-phone{
+    	padding-bottom: 10px;
+
+    }
+
+	.description {
+		padding: 0 20px;
+	}
+
+	.share-icons {
+		margin-top: 0;
+		white-space: nowrap;
+
+		.icon {
+			@tm-icon-size: 18px;
+			margin-right: 7px;
+			width: @tm-icon-size;
+			height: @tm-icon-size;
+
+			color: @accent-color-7;
+			text-align: center;
+			font-size: @tm-icon-size !important;
+			line-height: 1;
+
+			&:hover {
+				.transition(color .5s ease 0s);
+				color: @accent-color-1;
+			}
+		}
+	}
+
+	.description {
+		display: none;
+	}
+}

@@ -1,0 +1,215 @@
+.loop-wrapper.news {
+	.post-article {
+		overflow: hidden;
+		margin: 0;
+		border-bottom: 0px !important;
+
+		&:hover {
+			.image-post-format,
+			.as-image {
+			   .thumbnail {
+					background-color: @accent-color-7;
+					opacity: .5;
+					transition: background-color .4s, opacity .4s;
+
+					.icon {
+						opacity: 1;
+						transition: opacity .4s;
+					}
+
+					img {
+						.transform(scale(1.2));
+					}
+				}
+			}
+		}
+
+		.post-content-outer {
+			padding: 25px 0 0 0;
+
+			> p:first-child {
+				margin-top: 20px;
+			}
+
+			&, p {
+				.wpv-font(primary-font-);
+				margin-bottom: 0.5em;
+			}
+		}
+	}
+
+	.post-content-wrapper {
+		padding-top: 20px;
+
+		h4 {
+			font-size: 22px;
+
+			&, a {
+				color: @css_link_color;
+				font-size: 22px;
+
+				&:hover {
+					color: @css_link_hover_color;
+				}
+			}
+		}
+	}
+
+	.comment-count {
+		position: relative;
+		display: inline-block;
+		float: left;
+		margin-left: 5px;
+		padding: 2px 10px 0 10px;
+		border: 1px solid @default-line-color;
+		border-radius: 0.2em;
+		color: @accent-color-3;
+
+		a {
+			font-weight: normal;
+			color: @accent-color-3 !important;
+
+			&:hover {
+				color: @accent-color-1;
+			}
+		}
+	}
+
+	.post-actions-wrapper {
+		.icon {
+			margin-right: 10px;
+			vertical-align: top;
+			font-size: 14px;
+			color: @accent-color-3;
+
+			&:hover {
+				color: @accent-color-1;
+			}
+		}
+
+		.post-date {
+			position: relative;
+			display: inline-block;
+			float: left;
+			padding: 2px 10px;
+			border: 1px solid @default-line-color;
+			border-radius: 0.2em;
+			color: @accent-color-3;
+		}
+	}
+
+	.post-content-meta {
+		color: lighten(@primary-font-color, 20%);
+	}
+
+	.list-item {
+		padding-top: 15px;
+		border-bottom: 0;
+
+		header.single {
+			padding-top: 0;
+			padding-bottom: 10px;
+		}
+
+		> div {
+			position: relative;
+			position: relative;
+			z-index: 1;
+			overflow: hidden;
+			background: transparent;
+		}
+	}
+
+	&.isotope {
+		overflow: hidden;
+		height: 0;
+	}
+
+	&.wpv-isotope-loaded {
+		padding-top: 2px;
+		padding-bottom: @vertical-padding/2;
+	}
+
+	.thumbnail {
+		position: relative;
+		overflow: visible;
+		width: 100%;
+		text-align: center;
+
+		img {
+			width: 100%;
+			height: auto;
+			border-radius: 5px;
+		}
+
+		.icon {
+			@icon-size: 65px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			display: inline-block;
+			width: @icon-size;
+			height: @icon-size;
+			color: @accent-color-8;
+			font-size: @icon-size;
+			margin: -@icon-size/2 0 0 -@icon-size/2;
+			opacity: 0;
+		}
+	}
+
+	.post-edit-link,
+	.sep-text-after {
+		display: none;
+	}
+
+	.image-post-format,
+	.video-post-format.as-image,
+	.standard-post-format.as-image {
+		.thumbnail {
+			overflow: hidden;
+			border-radius: 5px;
+			.translateZ(0);
+
+			img {
+				transition: all .4s ease;
+			}
+		}
+	}
+
+	> .page-content {
+		margin-bottom: 60px;
+	}
+
+	.post-article {
+		.quote-post-format {
+			.cite {
+				float: none;
+				padding: 20px 0 20px;
+				width: auto;
+				text-align: left;
+
+				img {
+					display: inline-block;
+					margin-bottom: 0;
+					padding: 0 20px 0 0;
+					max-width: 85px;
+					border: 0;
+					vertical-align: middle;
+
+					+ .quote-author {
+						display: inline;
+						vertical-align: middle;
+					}
+				}
+
+				+ .quote-text {
+					padding-left: 0;
+				}
+			}
+
+			.quote-text {
+				padding-bottom: 25px;
+			}
+		}
+	}
+}

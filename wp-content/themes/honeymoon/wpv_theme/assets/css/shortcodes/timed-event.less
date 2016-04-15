@@ -1,0 +1,100 @@
+.vamtam-timed-event {
+	border: 4px solid @default-line-color;
+	border-radius: 6px;
+	padding: 30px 0;
+	text-align: center;
+
+	.icon.shortcode {
+        line-height: 1;
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+
+	.event-title {
+		padding: 0 30px 30px 30px;
+		border-bottom: 1px solid @default-line-color;
+		font-size: 22px;
+		letter-spacing: 3px;
+	}
+
+	.event-time {
+		position: relative;
+
+		.event-time-left,
+		.event-time-right {
+			.border-box();
+			width: 50%;
+			padding-bottom: 35px;
+
+			.event-time-inner {
+				.border-box();
+				border-bottom: 1px solid @default-line-color;
+				height: 130px;
+				padding: 35px 20px 20px 20px;
+			}
+		}
+
+		.event-time-left {
+			float: left;
+			padding-right: 20px;
+		}
+
+		.event-time-right {
+			float: right;
+			padding-left: 20px;
+		}
+
+		.flower {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			margin-left: -77/2px;
+
+			path {
+				fill: @default-line-color;
+			}
+		}
+	}
+
+	.event-description {
+		padding: 0 30px;
+
+		p {
+			margin: 0 0 1em 0;
+		}
+	}
+
+	&.style-light {
+		border-color: @accent-color-8;
+
+		&, p {
+			color: @accent-color-8;
+		}
+
+		.event-title,
+		.event-time-inner {
+			color: @accent-color-8;
+			border-bottom-color: @accent-color-7;
+		}
+
+		.flower path {
+			fill: @accent-color-8;
+		}
+	}
+
+	&.lt300 {
+		.event-time-left {
+			.event-time-inner {
+				padding-left: 10px;
+				height: 150px;
+			}
+		}
+
+		.event-time-right {
+			.event-time-inner {
+				padding-right: 10px;
+				height: 150px;
+			}
+		}
+	}
+}
